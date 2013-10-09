@@ -383,3 +383,471 @@
 	"begin_code.h"
 	"close_code.h"
 
+1381347674 source:c:\users\julian\documents\github\open-sparc\open-sparc\main.cpp
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<GL/GL.h>
+	<GL/glu.h>
+	"video.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_platform.h
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_config_win32.h
+	"SDL_platform.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\begin_code.h
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\close_code.h
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_keysym.h
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1381347727 source:c:\users\julian\documents\github\open-sparc\open-sparc\video.cpp
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<GL/GL.h>
+	<GL/glu.h>
+	"video.h"
+
+1381160168 c:\users\julian\documents\github\open-sparc\open-sparc\video.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+
+1380809631 source:c:\users\julian\documents\github\open-sparc\open-sparc\application_window.cpp
+	"application_window.h"
+	<SDL/SDL.h>
+	<SDL/SDL_opengl.h>
+
+1380809609 c:\users\julian\documents\github\open-sparc\open-sparc\application_window.h
+	<SDL/SDL_video.h>
+	<string>
+
+1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl_opengl.h
+	"SDL_config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<gl.h>
+	<glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<windows.h>
+	<stddef.h>
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\glm.hpp
+	"core/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cstdio>
+	"core/setup.hpp"
+	"./core/_detail.hpp"
+	"./core/_vectorize.hpp"
+	"./core/type.hpp"
+	"./core/func_trigonometric.hpp"
+	"./core/func_exponential.hpp"
+	"./core/func_common.hpp"
+	"./core/func_packing.hpp"
+	"./core/func_geometric.hpp"
+	"./core/func_matrix.hpp"
+	"./core/func_vector_relational.hpp"
+	"./core/func_integer.hpp"
+	"./core/func_noise.hpp"
+	"./core/_swizzle.hpp"
+
+1378162408 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\_fixes.hpp
+	<cmath>
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\setup.hpp
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\_detail.hpp
+	"setup.hpp"
+	<cassert>
+	<cstdint>
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\_vectorize.hpp
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type.hpp
+	"type_half.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_gentype.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat2x2.hpp"
+	"type_mat2x3.hpp"
+	"type_mat2x4.hpp"
+	"type_mat3x2.hpp"
+	"type_mat3x3.hpp"
+	"type_mat3x4.hpp"
+	"type_mat4x2.hpp"
+	"type_mat4x3.hpp"
+	"type_mat4x4.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_half.hpp
+	<cstdlib>
+	"type_half.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_half.inl
+	"_detail.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_float.hpp
+	"type_half.hpp"
+	"setup.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_int.hpp
+	"setup.hpp"
+	"_detail.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_gentype.hpp
+	"type_size.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_size.hpp
+	<cstdlib>
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec1.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec1.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec.hpp
+	"type_gentype.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\_swizzle.hpp
+	"_swizzle_func.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\_swizzle_func.hpp
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec1.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec2.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec2.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec2.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec3.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec3.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec3.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec4.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec4.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_vec4.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat2x2.hpp
+	"type_mat.hpp"
+	"type_mat2x2.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat.hpp
+	"type_gentype.hpp"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat2x2.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat2x3.hpp
+	"type_mat.hpp"
+	"type_mat2x3.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat2x3.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat2x4.hpp
+	"type_mat.hpp"
+	"type_mat2x4.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat2x4.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat3x2.hpp
+	"type_mat.hpp"
+	"type_mat3x2.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat3x2.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat3x3.hpp
+	"type_mat.hpp"
+	"type_mat3x3.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat3x3.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat3x4.hpp
+	"type_mat.hpp"
+	"type_mat3x4.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat3x4.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat4x2.hpp
+	"type_mat.hpp"
+	"type_mat4x2.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat4x2.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat4x3.hpp
+	"type_mat.hpp"
+	"type_mat4x3.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat4x3.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat4x4.hpp
+	"type_mat.hpp"
+	"type_mat4x4.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\type_mat4x4.inl
+
+1378162408 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_trigonometric.hpp
+	"func_trigonometric.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_trigonometric.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_exponential.hpp
+	"func_exponential.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_exponential.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_common.hpp
+	"_fixes.hpp"
+	"func_common.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_common.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_packing.hpp
+	"func_packing.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_packing.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_geometric.hpp
+	"func_geometric.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_geometric.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_matrix.hpp
+	"func_matrix.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_matrix.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_vector_relational.hpp
+	"_detail.hpp"
+	"func_vector_relational.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_vector_relational.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_integer.hpp
+	"func_integer.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_integer.inl
+	<intrin.h>
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_noise.hpp
+	"func_noise.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\core\func_noise.inl
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\gtc\matrix_transform.hpp
+	"../glm.hpp"
+	"matrix_transform.inl"
+
+1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\gtc\matrix_transform.inl
+

@@ -1,46 +1,42 @@
 #include <SDL/SDL.h>
 #include <SDL/SDL_video.h>
+#include <GL/GL.h>
+#include <GL/glu.h>
+#include "video.h"
 
-int main ( int argc, char** argv )
+bool init()
 {
-    // initialize SDL video
-    if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
-    {
-        printf( "Unable to init SDL: %s\n", SDL_GetError() );
-        return 1;
+    if(SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+        return false;
     }
+ // get screen resolution
+    const SDL_VideoInfo* info = SDL_GetVideoInfo();
 
+
+
+    if(( SDL_SetVideoMode(info->current_w, info->current_h, 32, SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER | SDL_FULLSCREEN | SDL_OPENGL)) == NULL) {
+        return false;
+    }
     // make sure SDL cleans up before exit
     atexit(SDL_Quit);
 
-    // get screen resolution
-    const SDL_VideoInfo* info = SDL_GetVideoInfo();
+    glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(90,info->current_w/(float)info->current_h,0.1,99);
+	glViewport(0,0,info->current_w,info->current_h);
 
-    putenv(strdup("SDL_VIDEO_CENTERED=1"));
+    return true;
+}
 
-    // create a new window
-    SDL_Surface* screen = SDL_SetVideoMode(info->current_w, info->current_h, 32,
-                                           SDL_HWSURFACE|SDL_DOUBLEBUF|SDL_NOFRAME);
-
-
-    if ( !screen )
+int main ( int argc, char** argv )
+{
+    if ( !init() )
     {
-        printf("Unable to set %sx%s video: %s\n", info->current_w, info->current_h, SDL_GetError());
+        printf("Unable to start SDL + OPENGL: %s\n", SDL_GetError());
         return 1;
     }
 
-    // load an image
-    SDL_Surface* bmp = SDL_LoadBMP("cb.bmp");
-    if (!bmp)
-    {
-        printf("Unable to load bitmap: %s\n", SDL_GetError());
-        return 1;
-    }
-
-    // centre the bitmap on screen
-    SDL_Rect dstrect;
-    dstrect.x = (screen->w - bmp->w) / 2;
-    dstrect.y = (screen->h - bmp->h) / 2;
+    Video video = Video(vec3(0.01,1,0), vec3(0,0,0), vec3(0,1,0));
 
     // program main loop
     bool done = false;
@@ -71,20 +67,13 @@ int main ( int argc, char** argv )
 
         // DRAWING STARTS HERE
 
-        // clear screen
-        SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 0, 0, 0));
-
-        // draw bitmap
-        SDL_BlitSurface(bmp, 0, screen, &dstrect);
+        video.draw();
 
         // DRAWING ENDS HERE
 
         // finally, update the screen :)
-        SDL_Flip(screen);
-    } // end main loop
 
-    // free loaded bitmap
-    SDL_FreeSurface(bmp);
+    } // end main loop
 
     // all is well ;)
     printf("Exited cleanly\n");
