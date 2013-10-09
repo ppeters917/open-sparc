@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1380749686 source:c:\dropbox\workspace\open-sparc\open-sparc.launcher\main.c
+1381180111 source:c:\dropbox\workspace\open-sparc\open-sparc.launcher\main.c
+	<windows.h>
 	<stdlib.h>
 	<gtk/gtk.h>
 

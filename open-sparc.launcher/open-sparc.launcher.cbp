@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/open-sparc.launcher" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/open-sparc" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/open-sparc.launcher" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/open-sparc" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -29,24 +29,67 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-mms-bitfields" />
 			<Add option="-Wall" />
-			<Add directory="C:/Dropbox/GTK/include" />
-			<Add directory="C:/Dropbox/GTK/include/gtk-2.0" />
-			<Add directory="C:/Dropbox/GTK/include/cairo" />
-			<Add directory="C:/Dropbox/GTK/include/gdk" />
-			<Add directory="C:/Dropbox/GTK/include/glib-2.0" />
-			<Add directory="C:/Dropbox/GTK/lib/glib-2.0/include" />
-			<Add directory="C:/Dropbox/GTK/include/pango-1.0" />
-			<Add directory="C:/Dropbox/GTK/lib/gtk-2.0/include" />
-			<Add directory="C:/Dropbox/GTK/include/atk-1.0" />
-			<Add directory="C:/Dropbox/GTK/include/gdk-pixbuf-2.0" />
+			<Add option="-mms-bitfields" />
+			<Add directory="include" />
+			<Add directory="include/gtk-2.0" />
+			<Add directory="include/cairo" />
+			<Add directory="include/gtk" />
+			<Add directory="include/glib-2.0" />
+			<Add directory="lib/glib-2.0/include" />
+			<Add directory="include/pango-1.0" />
+			<Add directory="lib/gtk-2.0/include" />
+			<Add directory="include/atk-1.0" />
+			<Add directory="include/gdk-pixbuf-2.0" />
 		</Compiler>
 		<Linker>
-			<Add library="gtk-win32-2.0" />
-			<Add library="gobject-2.0" />
-			<Add library="glib-2.0" />
-			<Add directory="C:/Dropbox/GTK/lib" />
+			<Add library="lib\atk-1.0.lib" />
+			<Add library="lib\cairo.lib" />
+			<Add library="lib\expat.lib" />
+			<Add library="lib\fontconfig.lib" />
+			<Add library="lib\freetype.lib" />
+			<Add library="lib\gailutil.lib" />
+			<Add library="lib\gdk_pixbuf-2.0.lib" />
+			<Add library="lib\gdk-win32-2.0.lib" />
+			<Add library="lib\gio-2.0.lib" />
+			<Add library="lib\glib-2.0.lib" />
+			<Add library="lib\gmodule-2.0.lib" />
+			<Add library="lib\gobject-2.0.lib" />
+			<Add library="lib\gthread-2.0.lib" />
+			<Add library="lib\gtk-win32-2.0.lib" />
+			<Add library="lib\intl.lib" />
+			<Add library="lib\libasprintf.dll.a" />
+			<Add library="lib\libatk-1.0.dll.a" />
+			<Add library="lib\libcairo.dll.a" />
+			<Add library="lib\libcairo-gobject.dll.a" />
+			<Add library="lib\libcairo-script-interpreter.dll.a" />
+			<Add library="lib\libexpat.dll.a" />
+			<Add library="lib\libfontconfig.dll.a" />
+			<Add library="lib\libfreetype.dll.a" />
+			<Add library="lib\libgailutil.dll.a" />
+			<Add library="lib\libgdk_pixbuf-2.0.dll.a" />
+			<Add library="lib\libgdk-win32-2.0.dll.a" />
+			<Add library="lib\libgio-2.0.dll.a" />
+			<Add library="lib\libglib-2.0.dll.a" />
+			<Add library="lib\libgmodule-2.0.dll.a" />
+			<Add library="lib\libgobject-2.0.dll.a" />
+			<Add library="lib\libgthread-2.0.dll.a" />
+			<Add library="lib\libgtk-win32-2.0.dll.a" />
+			<Add library="lib\libintl.dll.a" />
+			<Add library="lib\libpango-1.0.dll.a" />
+			<Add library="lib\libpangocairo-1.0.dll.a" />
+			<Add library="lib\libpangoft2-1.0.dll.a" />
+			<Add library="lib\libpangowin32-1.0.dll.a" />
+			<Add library="lib\libpixman-1.a" />
+			<Add library="lib\libpng.lib" />
+			<Add library="lib\libpng14.dll.a" />
+			<Add library="lib\libz.dll.a" />
+			<Add library="lib\pango-1.0.lib" />
+			<Add library="lib\pangocairo-1.0.lib" />
+			<Add library="lib\pangoft2-1.0.lib" />
+			<Add library="lib\pangowin32-1.0.lib" />
+			<Add library="lib\zdll.lib" />
+			<Add directory="lib" />
 		</Linker>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
