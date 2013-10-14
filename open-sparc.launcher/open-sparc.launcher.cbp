@@ -41,8 +41,10 @@
 			<Add directory="lib/gtk-2.0/include" />
 			<Add directory="include/atk-1.0" />
 			<Add directory="include/gdk-pixbuf-2.0" />
+			<Add directory="lib" />
 		</Compiler>
 		<Linker>
+			<Add library="lib\AdvAPI32.lib" />
 			<Add library="lib\atk-1.0.lib" />
 			<Add library="lib\cairo.lib" />
 			<Add library="lib\expat.lib" />
@@ -83,14 +85,19 @@
 			<Add library="lib\libpixman-1.a" />
 			<Add library="lib\libpng.lib" />
 			<Add library="lib\libpng14.dll.a" />
+			<Add library="lib\libws2_32.a" />
 			<Add library="lib\libz.dll.a" />
+			<Add library="lib\MsWSock.lib" />
 			<Add library="lib\pango-1.0.lib" />
 			<Add library="lib\pangocairo-1.0.lib" />
 			<Add library="lib\pangoft2-1.0.lib" />
 			<Add library="lib\pangowin32-1.0.lib" />
+			<Add library="lib\ws2_32.lib" />
 			<Add library="lib\zdll.lib" />
 			<Add directory="lib" />
 		</Linker>
+		<Unit filename="include/client.h" />
+		<Unit filename="include/win_client.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

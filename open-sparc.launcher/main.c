@@ -1,10 +1,20 @@
-#include <windows.h>
-#include <stdlib.h>
-#include <gtk/gtk.h>
+#define _WIN32_WINNT 0x0501
+
+#ifdef _WIN32
+  #include <winsock2.h>
+  #include <stdlib.h>
+  #include <gtk/gtk.h>
+  #include <win_client.h>
+#else
+  #include <client.h>
+#endif
+
+GtkWidget *Clt_text;
 
 void sparc_login(GtkButton *button, gpointer user_data)
 {
-
+    Clt_text = gtk_label_new("test");
+    StrClt();
 }
 
 void sparc_register(GtkButton *button, gpointer user_data)
@@ -21,6 +31,7 @@ int main (int argc, char *argv[])
     GtkWidget *passwd;
     GtkWidget *button;
     GtkWidget *reg;
+    GtkWidget *srv;
 
     GtkWidget *user_label;
     GtkWidget *user_text;
@@ -49,6 +60,7 @@ int main (int argc, char *argv[])
     passwd = gtk_hbox_new (FALSE, 10);
     button = gtk_hbox_new (TRUE, 10);
     reg = gtk_hbox_new (FALSE, 10);
+    srv = gtk_hbox_new (FALSE, 10);
 
     user_label = gtk_label_new("User:");
     user_text = gtk_entry_new();
@@ -60,6 +72,8 @@ int main (int argc, char *argv[])
     quit_button = gtk_button_new_with_label("Quit");
 
     register_button = gtk_button_new_with_label("Register");
+
+    Clt_text = gtk_label_new("");
 
     g_signal_connect(quit_button, "clicked", G_CALLBACK(gtk_main_quit), NULL);
     g_signal_connect(login_button, "clicked", G_CALLBACK(sparc_login), NULL);
@@ -77,11 +91,13 @@ int main (int argc, char *argv[])
     gtk_box_pack_start (GTK_BOX (button), quit_button, TRUE, TRUE, 0);
 
     gtk_box_pack_start (GTK_BOX (reg), register_button, TRUE, FALSE, 0);
+    gtk_box_pack_start (GTK_BOX (srv), Clt_text, TRUE, FALSE, 0);
 
     gtk_box_pack_start (GTK_BOX (vbox), user, FALSE, FALSE, 0);
     gtk_box_pack_start (GTK_BOX (vbox), passwd, FALSE, FALSE, 0);
     gtk_box_pack_start (GTK_BOX (vbox), button, FALSE, FALSE, 0);
     gtk_box_pack_start (GTK_BOX (vbox), reg, FALSE, FALSE, 0);
+    gtk_box_pack_start (GTK_BOX (vbox), srv, FALSE, FALSE, 0);
 
     gtk_widget_show_all (win);
     gtk_main ();

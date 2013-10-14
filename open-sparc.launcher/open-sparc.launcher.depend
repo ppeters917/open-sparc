@@ -1,8 +1,10 @@
 # depslib dependency file v1.0
-1381180111 source:c:\dropbox\workspace\open-sparc\open-sparc.launcher\main.c
-	<windows.h>
+1381357790 source:c:\dropbox\workspace\open-sparc\open-sparc.launcher\main.c
+	<winsock2.h>
 	<stdlib.h>
 	<gtk/gtk.h>
+	<win_client.h>
+	<client.h>
 
 1328733298 c:\dropbox\workspace\open-sparc\open-sparc.launcher\include\gtk-2.0\gtk\gtk.h
 	<gdk/gdk.h>
@@ -2247,4 +2249,21 @@
 
 1328733300 c:\dropbox\workspace\open-sparc\open-sparc.launcher\include\gtk-2.0\gtk\gtktipsquery.h
 	<gtk/gtk.h>
+
+1381358938 c:\dropbox\workspace\open-sparc\open-sparc.launcher\include\win_client.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
+1381357462 c:\dropbox\workspace\open-sparc\open-sparc.launcher\include\client.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
 
