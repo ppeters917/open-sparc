@@ -3,6 +3,10 @@
 #include <GL/GL.h>
 #include <GL/glu.h>
 #include "video.h"
+#include "game.h"
+
+void loadConfig();
+void initEffects();
 
 bool init()
 {
@@ -14,7 +18,7 @@ bool init()
 
 
 
-    if(( SDL_SetVideoMode(info->current_w, info->current_h, 32, SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER | SDL_FULLSCREEN | SDL_OPENGL)) == NULL) {
+    if(( SDL_SetVideoMode(info->current_w, info->current_h, 32, SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER  | SDL_OPENGL)) == NULL) {
         return false;
     }
     // make sure SDL cleans up before exit
@@ -24,6 +28,9 @@ bool init()
 	glLoadIdentity();
 	gluPerspective(90,info->current_w/(float)info->current_h,0.1,99);
 	glViewport(0,0,info->current_w,info->current_h);
+
+	//loadConfig();
+	//initEffects();
 
     return true;
 }
@@ -36,7 +43,16 @@ int main ( int argc, char** argv )
         return 1;
     }
 
-    Video video = Video(vec3(0.01,1,0), vec3(0,0,0), vec3(0,1,0));
+    Video video = Video(vec3(0.01,1,0), vec3(0,0,0), vec3(0,0,1));
+    Game game = Game();
+
+    video.setViewMode(VIEW_EGO);
+
+    video.setViewPosition(vec3(0,10,1));
+    video.setViewDir(vec3(0,-1,0));
+    video.setViewDistance(2);
+
+    video.lookRelative(45,LOOK_UP);
 
     // program main loop
     bool done = false;
@@ -66,6 +82,8 @@ int main ( int argc, char** argv )
         } // end of message processing
 
         // DRAWING STARTS HERE
+
+        game.tick(&video);
 
         video.draw();
 

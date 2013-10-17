@@ -40,9 +40,10 @@
 			<Add library="gdi32" />
 			<Add library="winmm" />
 			<Add library="dxguid" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
 			<Add directory="lib" />
 		</Linker>
-		<Unit filename="application_window.cpp" />
 		<Unit filename="application_window.h" />
 		<Unit filename="cb.bmp" />
 		<Unit filename="main.cpp" />

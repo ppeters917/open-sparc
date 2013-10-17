@@ -1,7 +1,10 @@
 # depslib dependency file v1.0
-1380747589 source:c:\dropbox\workspace\open-sparc\open-sparc\main.cpp
+1381349302 source:c:\dropbox\workspace\open-sparc\open-sparc\main.cpp
 	<SDL/SDL.h>
 	<SDL/SDL_video.h>
+	<GL/GL.h>
+	<GL/glu.h>
+	"video.h"
 
 1325742239 c:\dropbox\sdl\include\sdl\sdl.h
 	"SDL_main.h"
@@ -383,12 +386,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1381347674 source:c:\users\julian\documents\github\open-sparc\open-sparc\main.cpp
+1381789295 source:c:\users\julian\documents\github\open-sparc\open-sparc\main.cpp
 	<SDL/SDL.h>
 	<SDL/SDL_video.h>
 	<GL/GL.h>
 	<GL/glu.h>
 	"video.h"
+	"game.h"
 
 1380754511 c:\users\julian\documents\github\open-sparc\open-sparc\include\sdl\sdl.h
 	"SDL_main.h"
@@ -580,14 +584,15 @@
 	"begin_code.h"
 	"close_code.h"
 
-1381347727 source:c:\users\julian\documents\github\open-sparc\open-sparc\video.cpp
+1381793114 source:c:\users\julian\documents\github\open-sparc\open-sparc\video.cpp
 	<SDL/SDL.h>
 	<SDL/SDL_video.h>
 	<GL/GL.h>
 	<GL/glu.h>
+	<cmath>
 	"video.h"
 
-1381160168 c:\users\julian\documents\github\open-sparc\open-sparc\video.h
+1381780181 c:\users\julian\documents\github\open-sparc\open-sparc\video.h
 	<glm/glm.hpp>
 	<glm/gtc/matrix_transform.hpp>
 
@@ -850,4 +855,265 @@
 	"matrix_transform.inl"
 
 1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\gtc\matrix_transform.inl
+
+1381349302 D
+
+1381790378 source:c:\users\julian\documents\github\open-sparc\open-sparc\game.cpp
+	"video.h"
+	"game.h"
+
+1381778142 c:\users\julian\documents\github\open-sparc\open-sparc\game.h
+	"video.h"
+
+1381349302 c6990548f6f7d3ab149b5a7f21c2c70b8f2b1
+	"video.h"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\video.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\glm.hpp
+	"core/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cstdio>
+	"core/setup.hpp"
+	"./core/_detail.hpp"
+	"./core/_vectorize.hpp"
+	"./core/type.hpp"
+	"./core/func_trigonometric.hpp"
+	"./core/func_exponential.hpp"
+	"./core/func_common.hpp"
+	"./core/func_packing.hpp"
+	"./core/func_geometric.hpp"
+	"./core/func_matrix.hpp"
+	"./core/func_vector_relational.hpp"
+	"./core/func_integer.hpp"
+	"./core/func_noise.hpp"
+	"./core/_swizzle.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\_fixes.hpp
+	<cmath>
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\setup.hpp
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\_detail.hpp
+	"setup.hpp"
+	<cassert>
+	<cstdint>
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\_vectorize.hpp
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type.hpp
+	"type_half.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_gentype.hpp"
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat2x2.hpp"
+	"type_mat2x3.hpp"
+	"type_mat2x4.hpp"
+	"type_mat3x2.hpp"
+	"type_mat3x3.hpp"
+	"type_mat3x4.hpp"
+	"type_mat4x2.hpp"
+	"type_mat4x3.hpp"
+	"type_mat4x4.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_half.hpp
+	<cstdlib>
+	"type_half.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_half.inl
+	"_detail.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_float.hpp
+	"type_half.hpp"
+	"setup.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_int.hpp
+	"setup.hpp"
+	"_detail.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_gentype.hpp
+	"type_size.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_size.hpp
+	<cstdlib>
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec1.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec1.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec.hpp
+	"type_gentype.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\_swizzle.hpp
+	"_swizzle_func.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\_swizzle_func.hpp
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec1.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec2.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec2.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec2.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec3.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec3.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec3.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec4.hpp
+	"type_vec.hpp"
+	"type_float.hpp"
+	"type_int.hpp"
+	"type_size.hpp"
+	"_swizzle.hpp"
+	"type_vec4.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_vec4.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat2x2.hpp
+	"type_mat.hpp"
+	"type_mat2x2.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat.hpp
+	"type_gentype.hpp"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat2x2.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat2x3.hpp
+	"type_mat.hpp"
+	"type_mat2x3.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat2x3.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat2x4.hpp
+	"type_mat.hpp"
+	"type_mat2x4.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat2x4.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat3x2.hpp
+	"type_mat.hpp"
+	"type_mat3x2.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat3x2.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat3x3.hpp
+	"type_mat.hpp"
+	"type_mat3x3.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat3x3.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat3x4.hpp
+	"type_mat.hpp"
+	"type_mat3x4.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat3x4.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat4x2.hpp
+	"type_mat.hpp"
+	"type_mat4x2.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat4x2.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat4x3.hpp
+	"type_mat.hpp"
+	"type_mat4x3.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat4x3.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat4x4.hpp
+	"type_mat.hpp"
+	"type_mat4x4.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\type_mat4x4.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_trigonometric.hpp
+	"func_trigonometric.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_trigonometric.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_exponential.hpp
+	"func_exponential.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_exponential.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_common.hpp
+	"_fixes.hpp"
+	"func_common.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_common.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_packing.hpp
+	"func_packing.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_packing.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_geometric.hpp
+	"func_geometric.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_geometric.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_matrix.hpp
+	"func_matrix.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_matrix.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_vector_relational.hpp
+	"_detail.hpp"
+	"func_vector_relational.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_vector_relational.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_integer.hpp
+	"func_integer.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_integer.inl
+	<intrin.h>
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_noise.hpp
+	"func_noise.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\core\func_noise.inl
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\gtc\matrix_transform.hpp
+	"../glm.hpp"
+	"matrix_transform.inl"
+
+1381349302 c:\dropbox\workspace\open-sparc\open-sparc\include\glm\gtc\matrix_transform.inl
+
+1381349302 source:c:\dropbox\workspace\open-sparc\open-sparc\video.cpp
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<GL/GL.h>
+	<GL/glu.h>
 
