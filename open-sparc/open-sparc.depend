@@ -856,6 +856,7 @@
 
 1379620686 c:\users\julian\documents\github\open-sparc\open-sparc\include\glm\gtc\matrix_transform.inl
 
+<<<<<<< HEAD
 1381349302 D
 
 1381790378 source:c:\users\julian\documents\github\open-sparc\open-sparc\game.cpp
@@ -868,6 +869,8 @@
 1381349302 c6990548f6f7d3ab149b5a7f21c2c70b8f2b1
 	"video.h"
 
+=======
+>>>>>>> cf0c6990548f6f7d3ab149b5a7f21c2c70b8f2b1
 1381349302 c:\dropbox\workspace\open-sparc\open-sparc\video.h
 	<glm/glm.hpp>
 	<glm/gtc/matrix_transform.hpp>
@@ -1116,4 +1119,8 @@
 	<SDL/SDL_video.h>
 	<GL/GL.h>
 	<GL/glu.h>
+<<<<<<< HEAD
+=======
+	"video.h"
+>>>>>>> cf0c6990548f6f7d3ab149b5a7f21c2c70b8f2b1
 
